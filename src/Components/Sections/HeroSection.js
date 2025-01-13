@@ -6,7 +6,7 @@ import { SocMedIconsPreFab } from '../UI/IconsLogoPrefab';
 
 const HeroSection = () => {
   return (
-    <div className='hero-section'>
+    <div className='hero-section' id='hero-section'>
         <div className='hero-section__wrapper'>
             <div className='hero-section__profile-picture-wrapper'>
                 <img src={HeroImg}/>

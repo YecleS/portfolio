@@ -20,11 +20,11 @@ function App() {
           <Routes>
             <Route path='/' element = {
               <>
-                <HeroSection />
-                <EducationSection />
-                <SkillsSection />
-                <ProjectsSection />
-                <ContactSection />
+                <HeroSection/>
+                <EducationSection/>
+                <SkillsSection id='skills-section'/>
+                <ProjectsSection id='projects-section'/>
+                <ContactSection id='contacts-section'/>
               </>
               } 
             />

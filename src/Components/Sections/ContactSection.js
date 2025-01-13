@@ -84,7 +84,7 @@ const ContactSection = () => {
     }
 
   return (
-    <div className='contact-section'>
+    <div className='contact-section' id='contacts-section'>
       <div className='contact-section__wrapper'>
             <SectionCounter count='4' />
         <div className='contact-section__body'>

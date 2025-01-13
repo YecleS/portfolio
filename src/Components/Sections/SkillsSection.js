@@ -28,7 +28,7 @@ const SkillsSection = () => {
   const [selectedSkills, setSelectedSkills] = useState('front end');
 
   return (
-    <div className='skills-section'>
+    <div className='skills-section' id='skills-section'>
       <div className='skills-section__wrapper'>
         <SectionCounter count='2' />
 

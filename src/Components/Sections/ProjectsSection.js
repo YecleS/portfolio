@@ -23,7 +23,7 @@ const ProjectsSection = () => {
   ]
 
   return (
-    <div className='projects-section'>
+    <div className='projects-section' id='projects-section'>
       <div className='projects-section__wrapper'>
         <SectionCounter count='3' />
 

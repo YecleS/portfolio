@@ -7,7 +7,7 @@ import SectionTitle from '../UI/SectionTitle';
 
 const EducationSection = () => {
   return (
-    <div className='education-section'>
+    <div className='education-section' id='education-section'>
         <div className='education-section__wrapper'>
             <SectionCounter count='1' />
             

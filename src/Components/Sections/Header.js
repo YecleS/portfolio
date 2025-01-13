@@ -1,10 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ProfilePicture from '../Assets/self.jpg';
 import '../Styles/Header.css';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const [hamburgerMenu, setHamburgerMenu] = useState(false);
   const hamburgerMenuRef = useRef();
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleClick = (e) => {
@@ -15,7 +18,20 @@ const Header = () => {
 
     window.document.addEventListener('click', handleClick);
     return () => window.document.removeEventListener('click', handleClick);
-  }, [])
+  }, []);
+
+  const handleScroll = (id) => {
+    if(location.pathname !== '/'){
+      navigate('/');
+    }else {
+      const section = document.getElementById(id)
+
+      if(section){
+        section.scrollIntoView({behavior:'smooth'});
+      }
+    }
+  }
+
   return (
     <div className='header'>
       <div className='header__wrapper'>
@@ -24,11 +40,11 @@ const Header = () => {
         <div className='header__nav-wrapper' ref={hamburgerMenuRef}>
           <i className="fa-solid fa-burger" onClick={() => setHamburgerMenu(true)}></i>
           <ul className={`${hamburgerMenu ? 'active': ''}`}>
-            <li>Home</li>
-            <li>Education</li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Contacts</li>
+            <li onClick={() => handleScroll('hero-section')}>Home</li>
+            <li onClick={() => handleScroll('education-section')}>Education</li>
+            <li onClick={() => handleScroll('skills-section')}>Skills</li>
+            <li onClick={() => handleScroll('projects-section')}>Projects</li>
+            <li onClick={() => handleScroll('contacts-section')}>Contacts</li>
           </ul>
         </div>
       </div>
