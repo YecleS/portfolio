@@ -1,0 +1,27 @@
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 800;
+    background: rgb(25,104,193);
+    background: linear-gradient(142deg, rgb(6, 116, 241) 25%, rgba(196,45,246,1) 63%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+
+/*MEDIA QUERY */
+@media (max-width: 576px) { 
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+}
+
+
+@media (min-width: 577px) and (max-width: 768px)  { 
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+}

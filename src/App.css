@@ -1,0 +1,46 @@
+.App {
+    position: relative;
+    overflow: hidden;
+}
+
+.shapes {
+    position: absolute;
+    height: 800px;
+    width: 800px;
+    border-radius: 100%;
+    filter: blur(100px); 
+    z-index: -1;
+}
+
+.shape-blue {
+    background: rgb(218,239,255);
+    background: radial-gradient(circle, rgb(218, 234, 250) 32%, rgb(219, 230, 240) 85%);
+}
+
+.shape-purple {
+    background: rgb(249,208,255);
+    background: radial-gradient(circle, rgb(239, 217, 241) 21%, rgb(235, 216, 236) 50%);
+}
+
+.shape1 {
+    top: 2rem;
+    left: 20rem;
+}
+
+.shape2 {
+    top: 8rem;
+    right: 15rem;
+}
+
+@media (max-width: 576px) { 
+    .shape1 {
+        top: 2rem;
+        left: 0;
+    }
+    
+    .shape2 {
+        top: 8rem;
+        right: 0;
+    }
+
+}

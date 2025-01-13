@@ -1,0 +1,35 @@
+.input-field-text {
+    position: relative;
+}
+
+.input-field-text p{
+    position: absolute;
+    background: rgb(255, 255, 255);
+    padding: 0 0.5rem;
+    font-size: 0.85rem;
+    top: -10px;
+    left: 0.5rem;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.input-field-text input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.input-field-text textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 150px;
+}

@@ -1,0 +1,19 @@
+/* PRIMARY BUTTON STYLE */
+.primary-button {
+    padding: 0.5rem 1.2rem;
+    color: black;
+    background: transparent;
+    border: 1px solid black;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.primary-button:hover {
+    transform: scale(1.05);
+
+}
