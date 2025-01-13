@@ -22,9 +22,9 @@ function App() {
               <>
                 <HeroSection/>
                 <EducationSection/>
-                <SkillsSection id='skills-section'/>
-                <ProjectsSection id='projects-section'/>
-                <ContactSection id='contacts-section'/>
+                <SkillsSection/>
+                <ProjectsSection/>
+                <ContactSection/>
               </>
               } 
             />
